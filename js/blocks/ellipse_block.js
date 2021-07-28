@@ -18,7 +18,7 @@ Blockly.Blocks['ellipse'] = {
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(165);
-    this.setTooltip('Draws an ellipse on to the screen. ');
+    this.setTooltip('Draws an ellipse to the screen. ');
     this.setHelpUrl('https://p5js.org/reference/#/p5/ellipse');
   }
 };

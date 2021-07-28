@@ -1,7 +1,7 @@
 Blockly.Blocks['background'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("fondo");
+        .appendField("background");
     this.appendValueInput("NAME")
         .setCheck("Number")
         .appendField("color");
@@ -15,13 +15,13 @@ Blockly.Blocks['background'] = {
 };Blockly.Blocks['createcanvas'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("crearCanvas");
+        .appendField("createCanvas");
     this.appendValueInput("width")
         .setCheck("Number")
-        .appendField("ancho");
+        .appendField("width");
     this.appendValueInput("height")
         .setCheck("Number")
-        .appendField("alto");
+        .appendField("height");
     this.appendValueInput("canvas")
         .setCheck("String")
         .appendField("canvas");
@@ -34,10 +34,10 @@ Blockly.Blocks['background'] = {
 };Blockly.Blocks['draw'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("dibujar");
+        .appendField("draw");
     this.appendStatementInput("do")
         .setCheck(null)
-        .appendField("hacer");
+        .appendField("do");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(230);
@@ -47,7 +47,7 @@ Blockly.Blocks['background'] = {
 };Blockly.Blocks['ellipse'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("elipse");
+        .appendField("ellipse");
     this.appendValueInput("x")
         .setCheck("Number")
         .appendField("x");
@@ -56,21 +56,21 @@ Blockly.Blocks['background'] = {
         .appendField("y");
     this.appendValueInput("width")
         .setCheck("Number")
-        .appendField("ancho");
+        .appendField("w");
     this.appendValueInput("height")
         .setCheck("Number")
-        .appendField("alto");
+        .appendField("h");
     this.setInputsInline(true);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(165);
-    this.setTooltip('Dibuja una elipse en la pantalla. ');
+    this.setTooltip('Draws an ellipse to the screen. ');
     this.setHelpUrl('https://p5js.org/reference/#/p5/ellipse');
   }
 };Blockly.Blocks['fill'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("llenar");
+        .appendField("fill");
     this.appendValueInput("NAME")
         .setCheck("Number")
         .appendField("color");
@@ -113,10 +113,34 @@ Blockly.Blocks['rect'] = {
         .appendField("y");
     this.appendValueInput("width")
         .setCheck("Number")
-        .appendField("ancho");
+        .appendField("w");
     this.appendValueInput("height")
         .setCheck("Number")
-        .appendField("alto");
+        .appendField("h");
+    this.setInputsInline(true);
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(165);
+    this.setTooltip('');
+    this.setHelpUrl('');
+  }
+};
+Blockly.Blocks['line'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("line");
+    this.appendValueInput("x1")
+        .setCheck("Number")
+        .appendField("x1");
+    this.appendValueInput("y1")
+        .setCheck("Number")
+        .appendField("y1");
+    this.appendValueInput("x2")
+        .setCheck("Number")
+        .appendField("x2");
+    this.appendValueInput("y2")
+        .setCheck("Number")
+        .appendField("y2");
     this.setInputsInline(true);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
@@ -128,15 +152,15 @@ Blockly.Blocks['rect'] = {
 Blockly.Blocks['setup'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("setear");
+        .appendField("setup");
     this.appendStatementInput("do")
         .setCheck(null)
-        .appendField("hacer");
+        .appendField("do");
     this.setInputsInline(false);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(230);
-    this.setTooltip('La función setear() es llamada una sola vez cuando empieza el programa.');
+    this.setTooltip('The setup() function is called once when the program starts.');
     this.setHelpUrl('https://p5js.org/reference/#/p5/setup');
   }
 };
