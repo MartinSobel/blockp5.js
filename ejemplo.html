@@ -94,6 +94,7 @@
         <category name="Figura" colour="#F47A9E">
             <block type="ellipse"></block>
             <block type="rect"></block>
+            <block type="line"></block>
         </category>
         <category name="Eventos" colour="#F47A9E">
             <block type="mousex"></block>
@@ -455,6 +456,26 @@
                                         </block>
                                     </value>
                                     <value name="height">
+                                        <block type="math_number">
+                                            <field name="NUM">50</field>
+                                        </block>
+                                    </value>
+                                </block>
+                            </next>
+                            <next>
+                                <block type="line">
+                                    <value name="x1">
+                                        <block type="mousex"></block>
+                                    </value>
+                                    <value name="y1">
+                                        <block type="mousey"></block>
+                                    </value>
+                                    <value name="x2">
+                                        <block type="math_number">
+                                            <field name="NUM">50</field>
+                                        </block>
+                                    </value>
+                                    <value name="y2">
                                         <block type="math_number">
                                             <field name="NUM">50</field>
                                         </block>
