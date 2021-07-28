@@ -26,7 +26,7 @@ document.getElementById('p5Run').onclick = function() {
 };
 
 document.getElementById('p5Reset').onclick = function() {
-    if (confirm("Reset All!")) {
+    if (confirm("¿Borrar todo?")) {
         window.scrollTo(0, 0);
         location.reload(false);
     }
