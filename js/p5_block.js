@@ -1,7 +1,7 @@
 Blockly.Blocks['background'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("background");
+        .appendField("fondo");
     this.appendValueInput("NAME")
         .setCheck("Number")
         .appendField("color");
@@ -15,13 +15,13 @@ Blockly.Blocks['background'] = {
 };Blockly.Blocks['createcanvas'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("createCanvas");
+        .appendField("crearCanvas");
     this.appendValueInput("width")
         .setCheck("Number")
-        .appendField("width");
+        .appendField("ancho");
     this.appendValueInput("height")
         .setCheck("Number")
-        .appendField("height");
+        .appendField("alto");
     this.appendValueInput("canvas")
         .setCheck("String")
         .appendField("canvas");
@@ -34,10 +34,10 @@ Blockly.Blocks['background'] = {
 };Blockly.Blocks['draw'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("draw");
+        .appendField("dibujar");
     this.appendStatementInput("do")
         .setCheck(null)
-        .appendField("do");
+        .appendField("hacer");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(230);
@@ -47,7 +47,7 @@ Blockly.Blocks['background'] = {
 };Blockly.Blocks['ellipse'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("ellipse");
+        .appendField("elipse");
     this.appendValueInput("x")
         .setCheck("Number")
         .appendField("x");
@@ -56,7 +56,7 @@ Blockly.Blocks['background'] = {
         .appendField("y");
     this.appendValueInput("width")
         .setCheck("Number")
-        .appendField("w");
+        .appendField("a");
     this.appendValueInput("height")
         .setCheck("Number")
         .appendField("h");
@@ -64,13 +64,13 @@ Blockly.Blocks['background'] = {
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(165);
-    this.setTooltip('Draws an ellipse to the screen. ');
+    this.setTooltip('Dibuja una elipse en la pantalla. ');
     this.setHelpUrl('https://p5js.org/reference/#/p5/ellipse');
   }
 };Blockly.Blocks['fill'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("fill");
+        .appendField("llenar");
     this.appendValueInput("NAME")
         .setCheck("Number")
         .appendField("color");
@@ -113,7 +113,7 @@ Blockly.Blocks['rect'] = {
         .appendField("y");
     this.appendValueInput("width")
         .setCheck("Number")
-        .appendField("w");
+        .appendField("b");
     this.appendValueInput("height")
         .setCheck("Number")
         .appendField("h");
@@ -128,7 +128,7 @@ Blockly.Blocks['rect'] = {
 Blockly.Blocks['line'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("line");
+        .appendField("línea");
     this.appendValueInput("x1")
         .setCheck("Number")
         .appendField("x1");
@@ -152,10 +152,10 @@ Blockly.Blocks['line'] = {
 Blockly.Blocks['setup'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("setup");
+        .appendField("setear");
     this.appendStatementInput("do")
         .setCheck(null)
-        .appendField("do");
+        .appendField("hacer");
     this.setInputsInline(false);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
